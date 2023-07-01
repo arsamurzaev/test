@@ -161,6 +161,17 @@ h6 {
   line-height: 1.2;
 }
 
+.modal__body {
+  width: 100%;
+  height: 100%;
+  background: #111;
+}
+
+.modal__items.active {
+  width: 100%;
+  height: 100%;
+}
+
 .anim__items {
   display: none;
 }
@@ -178,9 +189,7 @@ h6 {
   }
 }
 .wrapper {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+  height: 100%;
 }
 
 .container {
@@ -191,7 +200,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 37px;
+  padding-top: 37px;
 }
 .header__title {
   text-align: center;
@@ -200,12 +209,15 @@ h6 {
   font-size: 7px;
   line-height: 7px;
   text-align: center;
-  letter-spacing: 0.29em;
+  letter-spacing: 1.54px;
   height: 20px;
 }
 .header__title > span {
   font-size: 20px;
   line-height: 26px;
+}
+.header__title > .em-28 {
+  letter-spacing: 4px;
 }
 .header__burger-menu {
   display: flex;
@@ -222,9 +234,11 @@ h6 {
 }
 
 .main__text {
+  margin: 169px 0 180px;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
+  padding: 30px 0 0;
   text-align: right;
   color: var(--primary-title-color);
 }
@@ -359,6 +373,7 @@ h6 {
   background: var(--primary-subtitle-color);
   padding: 25px 15px;
   margin-bottom: 10px;
+  width: calc(50% - 5px);
 }
 .team__title {
   text-align: center;
@@ -492,6 +507,7 @@ h6 {
   display: flex;
   flex-direction: column;
   row-gap: 15px;
+  padding-left: 30px;
 }
 
 .services__activity-item {

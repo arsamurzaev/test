@@ -6,4 +6,6 @@ function clickBurger() {
   });
 }
 
-window.addEventListener("DOMContentLoaded", clickBurger);
+window.addEventListener("DOMContentLoaded", () => {
+  clickBurger();
+});
