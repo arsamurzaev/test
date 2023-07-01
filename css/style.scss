@@ -60,7 +60,7 @@ body {
   color: var(--primary-text-color);
   font-family: var(--font-family-main);
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   font-size: 100%;
   line-height: 1;
   font-size: 14px;
@@ -114,7 +114,9 @@ h6 {
   font-size: inherit;
   font-weight: 400;
 }
-
+body {
+  min-height: 100%;
+}
 .nav {
   background: var(--main-background);
   width: 100%;
