@@ -52,8 +52,8 @@ body {
   background: var(--main-background);
   color: var(--primary-text-color);
   font-family: var(--font-family-main);
-  height: 100%;
   width: 100%;
+  height: 100%;
   font-size: 100%;
   line-height: 1;
   font-size: 14px;
@@ -111,15 +111,12 @@ h6 {
 .nav {
   background: var(--main-background);
   width: 100%;
+  height: 100%;
   z-index: 2;
   position: absolute;
 }
 .nav__row {
   padding: 37px 0 44px;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 .nav__header {
   display: flex;
@@ -132,7 +129,7 @@ h6 {
   color: var(--primary-subtitle-color);
 }
 .nav__list {
-  padding: 0 31px;
+  padding: 40px 31px 60px;
 }
 .nav__items {
   font-size: 24px;
@@ -261,8 +258,8 @@ h6 {
   width: calc(100% - 10px);
   display: flex;
   justify-content: space-between;
-  margin: 0 auto 159px;
-  padding: 0px 10px;
+  margin: 0 auto;
+  padding: 0px 10px 147px;
   font-size: 20px;
   line-height: 22px;
 }
