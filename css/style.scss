@@ -182,7 +182,9 @@ h6 {
 }
 
 .wrapper {
-  height: 100%;
+  min-height: 100%;
+  background-size: 100%;
+  background-attachment: fixed;
 }
 
 .container {
@@ -548,8 +550,9 @@ h6 {
 .technical__info-list {
   padding: 15px 15px 25px 25px;
   background: rgba(168, 0, 0, 0.5);
-  margin-left: -30px;
   display: flex;
+  max-width: 350px;
+  margin-left: -30px;
   flex-direction: column;
   row-gap: 20px;
 }
