@@ -349,9 +349,6 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
-    &:last-child {
-      padding-bottom: 47px;
-    }
   }
   &__text {
     font-size: 13px;
@@ -526,7 +523,6 @@ body {
   flex-direction: column;
   row-gap: 15px;
   margin-right: -30px;
-  margin-bottom: 47px;
 }
 .technical__item {
   display: flex;
@@ -534,7 +530,6 @@ body {
 }
 .technical__number {
   color: rgba(168, 0, 0, 0.7);
-  text-align: right;
   font-size: 20px;
   width: 35px;
   text-align: right;
@@ -544,6 +539,7 @@ body {
   font-size: 13px;
   font-family: Montserrat;
   font-weight: 500;
+  width: calc(100% - 45px);
 }
 .technical__title {
   color: rgba(255, 255, 255, 0.71);
