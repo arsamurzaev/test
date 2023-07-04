@@ -301,11 +301,16 @@ h6 {
   background: var(--primary-subtitle-color);
   width: 250px;
   height: 130px;
-  margin: 23px -15px 30px 0px;
+  margin: 23px -30px 30px 0px;
   font-size: 14px;
 }
 .about__info-block > span {
   font-size: 40px;
+}
+@media (max-width: 320px) {
+  .about__info-block {
+    margin-right: -15px;
+  }
 }
 .about__row {
   display: flex;
@@ -337,9 +342,6 @@ h6 {
 }
 .price-list__items:not(:first-child) {
   margin-top: 30px;
-}
-.price-list__items:last-child {
-  padding-bottom: 47px;
 }
 .price-list__title {
   color: var(--primary-subtitle-color);
