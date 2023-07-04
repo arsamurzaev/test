@@ -339,13 +339,10 @@ h6 {
 }
 
 .price-list {
-  padding: 23px 0 0;
+  padding: 23px 0 23px;
   &__items {
     &:not(:first-child) {
       margin-top: 30px;
-    }
-    &:last-child {
-      padding-bottom: 30px;
     }
   }
   &__title {

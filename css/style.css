@@ -338,13 +338,10 @@ h6 {
 }
 
 .price-list {
-  padding: 23px 0 0;
+  padding: 23px 0 23px;
 }
 .price-list__items:not(:first-child) {
   margin-top: 30px;
-}
-.price-list__items:last-child {
-  padding-bottom: 30px;
 }
 .price-list__title {
   color: var(--primary-subtitle-color);
