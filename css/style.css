@@ -288,7 +288,7 @@ h6 {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 0px 10px 147px;
+  padding: 0px 10px 47px;
   font-size: 20px;
   line-height: 22px;
 }
@@ -538,7 +538,12 @@ h6 {
 }
 
 .services {
-  padding: 23px 15px;
+  padding: 23px 30px;
+}
+@media (max-width: 375px) {
+  .services {
+    padding: 23px 15px;
+  }
 }
 
 .services__list {
@@ -580,7 +585,7 @@ h6 {
   display: flex;
   flex-direction: column;
   row-gap: 15px;
-  padding-left: 30px;
+  padding-left: 46px;
 }
 
 .services__activity-item {
