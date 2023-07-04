@@ -125,7 +125,7 @@ h6 {
   z-index: 2;
   position: absolute;
   &__row {
-    padding: 37px 0 44px;
+    padding: 37px 0 23px;
   }
   &__header {
     display: flex;
@@ -406,7 +406,7 @@ h6 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 23px 0 47px;
+    padding: 23px 0 23px;
   }
   &__items {
     width: calc(50% - 5px);

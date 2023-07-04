@@ -121,7 +121,7 @@ h6 {
   position: absolute;
 }
 .nav__row {
-  padding: 37px 0 44px;
+  padding: 37px 0 23px;
 }
 .nav__header {
   display: flex;
@@ -412,7 +412,7 @@ h6 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 23px 0 47px;
+  padding: 23px 0 23px;
 }
 .team__items {
   width: calc(50% - 5px);
