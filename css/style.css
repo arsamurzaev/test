@@ -114,6 +114,21 @@ h6 {
   font-weight: 400;
 }
 
+.title {
+  color: #fbfbfb;
+  text-align: center;
+  line-height: normal;
+  opacity: 0.3000000119;
+}
+
+.title-64 {
+  font-size: 64px;
+}
+
+.title-100 {
+  font-size: 100px;
+}
+
 @property --num-1000 {
   syntax: "<integer>";
   initial-value: 1000;
@@ -137,9 +152,8 @@ h6 {
 .nums-anim {
   width: 142px;
   display: inline-block;
-  padding: 0 !important;
+  padding: 0;
   animation: 2s ease-in-out;
-  padding: 2rem;
 }
 .nums-anim::after {
   content: counter(num);
@@ -387,6 +401,9 @@ h6 {
 .header__link:hover {
   background-color: var(--primary-subtitle-color);
 }
+.header__link.active {
+  background: var(--primary-subtitle-color);
+}
 .header__burger-menu {
   display: flex;
   width: 25px;
@@ -618,7 +635,7 @@ h6 {
   width: 850px;
   background: rgba(0, 0, 0, 0.5);
 }
-.main__slider-block-black .title {
+.main__slider-block-black .black-title {
   color: #fff;
   font-size: 70px;
   font-weight: 400;
@@ -669,17 +686,11 @@ h6 {
 }
 
 @media (min-width: 1024px) {
-  .footer {
-    background: #595959;
-    padding: 40px;
-  }
-}
-@media (min-width: 1024px) {
-  .footer__btn {
+  .footer-mb__btn {
     display: none;
   }
 }
-.footer__button {
+.footer-mb__button {
   width: 100%;
   background: var(--block-background);
   border-radius: 90px;
@@ -692,10 +703,10 @@ h6 {
   font-size: 32px;
   position: relative;
 }
-.footer__button > a {
+.footer-mb__button > a {
   color: var(--primary-text-color);
 }
-.footer__button::after {
+.footer-mb__button::after {
   content: "";
   position: absolute;
   right: 23px;
@@ -705,11 +716,11 @@ h6 {
   background: url("../assets/icon__phone.svg") center no-repeat;
 }
 @media (max-width: 375px) {
-  .footer__button {
+  .footer-mb__button {
     font-size: 26px;
   }
 }
-.footer__nav-mb {
+.footer-mb__nav {
   width: calc(100% - 10px);
   display: flex;
   justify-content: space-between;
@@ -719,8 +730,18 @@ h6 {
   line-height: 22px;
 }
 @media (min-width: 1024px) {
-  .footer__nav-mb {
+  .footer-mb__nav {
     display: none;
+  }
+}
+.footer-mb__link {
+  color: #a5a5a5;
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    background: #595959;
+    padding: 40px;
   }
 }
 .footer__row {
@@ -735,9 +756,14 @@ h6 {
   }
 }
 .footer__subrow {
+  display: none;
   padding-top: 30px;
-  display: flex;
   justify-content: space-between;
+}
+@media (min-width: 1024px) {
+  .footer__subrow {
+    display: flex;
+  }
 }
 .footer__title {
   color: #fff;
@@ -762,10 +788,12 @@ h6 {
   text-decoration: underline;
   color: #fff;
 }
-.footer__link {
-  color: #a5a5a5;
-}
 
+@media (min-width: 1024px) {
+  .about {
+    display: none;
+  }
+}
 .about__info-block {
   padding: 20px 25px;
   background: var(--primary-subtitle-color);
@@ -805,6 +833,189 @@ h6 {
 }
 .about__items:not(:first-child) {
   margin-top: 20px;
+}
+
+.direction {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .direction {
+    display: block;
+  }
+}
+.direction__info {
+  display: flex;
+  justify-content: flex-end;
+  padding: 50px 0 160px;
+  position: relative;
+}
+.direction__info::before {
+  content: "";
+  width: 450px;
+  height: 610px;
+  position: absolute;
+  left: 80px;
+  top: 20px;
+  background: url("./../assets/IMG_0171 1.png") center no-repeat;
+}
+.direction__list {
+  width: 1200px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.direction__items {
+  list-style-type: disc;
+  color: #a8a8a8;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.information {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .information {
+    display: block;
+  }
+}
+.information__title {
+  margin-bottom: -70px;
+}
+.information__info {
+  padding: 88px 40px 40px;
+  background: url("./../assets/aspects-urban-landscape-tokyo-city-during-day 1.png") no-repeat;
+  background-size: cover;
+}
+.information__info-list {
+  display: flex;
+  justify-content: flex-end;
+}
+.information__list {
+  height: 460px;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.information__items {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  list-style-type: disc;
+}
+.information__text {
+  color: #fcfcfc;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.amenities {
+  display: none;
+  padding: 80px 35px;
+}
+@media (min-width: 1024px) {
+  .amenities {
+    display: block;
+  }
+}
+.amenities__info {
+  margin-top: 50px;
+}
+.amenities__list {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 120px;
+       column-gap: 120px;
+}
+.amenities__item {
+  width: 33%;
+  text-align: center;
+}
+.amenities__img {
+  width: 200px;
+  height: 220px;
+  margin-bottom: 70px;
+}
+.amenities__text {
+  color: #ededed;
+  font-size: 32px;
+  line-height: normal;
+  font-weight: 400;
+}
+
+.squad {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .squad {
+    display: block;
+  }
+}
+.squad__title {
+  margin-bottom: -70px;
+}
+.squad__info {
+  padding: 78px 35px 32px;
+  background: url("./../assets/д 1.png") no-repeat;
+  background-size: cover;
+}
+.squad__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.squad__items {
+  width: 450px;
+  min-height: 270px;
+  background: var(--primary-subtitle-color);
+  padding: 30px 10px 20px;
+}
+.squad__subtitle {
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  line-height: normal;
+  height: 70px;
+  margin-bottom: 30px;
+}
+.squad__text {
+  color: #989898;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  line-height: normal;
+}
+
+.permission {
+  display: none;
+  padding: 80px 20px;
+}
+@media (min-width: 1024px) {
+  .permission {
+    display: block;
+  }
+}
+.permission__row {
+  display: flex;
+  max-width: 990px;
+  justify-content: space-between;
+  margin: 50px auto 80px;
+}
+.permission__img {
+  width: 420px;
+  height: 600px;
+}
+.permission__img img {
+  max-width: 100%;
 }
 
 .price-list {
