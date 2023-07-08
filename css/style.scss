@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 
 @font-face {
-  font-family: Browler;
+  font-family: Bowler;
   src: url("./../fonts/Bowler.ttf");
   font-weight: 400;
   font-style: normal;
@@ -10,7 +10,7 @@
 }
 
 :root {
-  --font-family-main: Browler, sans-serif;
+  --font-family-main: Bowler, sans-serif;
 
   --main-background: #292929;
   --menu-background: #393939;
@@ -125,8 +125,8 @@ h6 {
 .title-64 {
   font-size: 64px;
 }
-.title-100 {
-  font-size: 100px;
+.title-110 {
+  font-size: 110px;
 }
 @property --num-1000 {
   syntax: "<integer>";
@@ -334,7 +334,7 @@ h6 {
     font-size: 7px;
     line-height: 7px;
     text-align: center;
-    letter-spacing: 1.30px;
+    letter-spacing: 1.3px;
     height: 20px;
     > span {
       font-size: 20px;
@@ -514,6 +514,10 @@ h6 {
     }
   }
   &__block {
+    display: none;
+    @media (min-width: 1024px) {
+      display: block;
+    }
     height: 720px;
   }
   &__block-red {
@@ -949,7 +953,7 @@ footer {
   }
 }
 .permission {
-  display: none;  
+  display: none;
   padding: 80px 20px;
   @media (min-width: 1024px) {
     display: block;
@@ -967,10 +971,202 @@ footer {
       max-width: 100%;
     }
   }
+  &__subtitle {
+    margin-bottom: 10px;
+    color: #fbfbfb;
+    font-size: 48px;
+    line-height: normal;
+    opacity: 0.30000001192092896;
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    &::before {
+      content: "";
+      width: 490px;
+      height: 660px;
+      position: absolute;
+      left: 34%;
+      background: url("./../assets/IMG_0171\ 1.svg") center / cover no-repeat;
+    }
+  }
+  &__left,
+  &__right {
+    width: 50%;
+  }
+  &__left {
+    padding-top: 93px;
+    > h3 {
+      text-align: right;
+    }
+    .permission__items {
+      text-align: right;
+    }
+    .permission__list {
+      padding-right: 55px;
+    }
+  }
+  &__right {
+    .permission__list {
+      padding-left: 55px;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 45px;
+  }
+  &__items {
+    color: #fafafa;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: normal;
+  }
+  &__label {
+    font-size: 32px;
+    font-weight: 700;
+  }
 }
-
+.actions {
+  display: none;
+  padding: 80px 20px;
+  @media (min-width: 1024px) {
+    display: block;
+  }
+  &__title {
+    opacity: 1;
+    color: #d2d2d2;
+    margin-bottom: 50px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+  }
+  &__items {
+    display: flex;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    > span {
+      display: block;
+      margin-right: 28px;
+      color: var(--primary-subtitle-color);
+      font-family: var(--font-family-main) !important;
+      font-size: 128px;
+      font-weight: 700;
+      line-height: normal;
+      font-family: serif;
+    }
+  }
+}
 .price-list {
   padding: 23px 0 23px;
+  @media (min-width: 1024px) {
+    padding: 20px 40px 80px;
+  }
+  &__mb {
+    @media (min-width: 1024px) {
+      display: none;
+    }
+  }
+  &__cp {
+    display: none;
+    @media (min-width: 1024px) {
+      display: block;
+    }
+  }
+  &__table {
+    width: 100%;
+    height: 907px;
+    border-radius: 10px;
+    border: 1px solid #f9f9f9;
+    background: rgba(217, 217, 217, 0);
+    border-collapse: separate;
+    border-spacing: 0px;
+
+    th,
+    td {
+      width: 300px;
+      &:first-child {
+        width: 380px + 76px;
+      }
+      border: 1px solid #f9f9f9;
+      border-spacing: 0.5px;
+    }
+    thead {
+      th {
+        padding: 21px 0 30px;
+        height: 150px;
+      }
+      th:first-child {
+        border-top-left-radius: 10px;
+      }
+      th:last-child {
+        border-top-right-radius: 10px;
+      }
+    }
+    tbody {
+      td {
+        height: 155px;
+        color: #f6f6f6;
+        text-align: center;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      tr td:first-child {
+        height: 55px;
+        padding-right: 20px;
+      }
+      tr:last-child {
+        td:first-child {
+          border-bottom-left-radius: 10px;
+        }
+        td:last-child {
+          border-bottom-right-radius: 10px;
+        }
+      }
+    }
+    &-title {
+      color: var(--primary-subtitle-color);
+      text-align: center;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: normal;
+      margin-bottom: 21px;
+    }
+    &-text {
+      font-family: Montserrat;
+      color: #a8a8a8;
+      font-size: 13px;
+      font-weight: 400;
+    }
+    &-subtitle {
+      width: 360px;
+      margin-left: 76px;
+      text-align: right;
+      color: #888383;
+      font-family: Montserrat;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: normal;
+      margin-bottom: 10px;
+    }
+    &-label {
+      color: #f6f6f6;
+      text-align: right;
+      font-family: Montserrat;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
   &__items {
     &:not(:first-child) {
       margin-top: 30px;
@@ -981,6 +1177,11 @@ footer {
     font-size: 32px;
     @media (max-width: 320px) {
       font-size: 27px;
+    }
+    @media (min-width: 1024px) {
+      color: inherit;
+      font-size: 110px;
+      margin-bottom: 40px;
     }
   }
   &__subtitle {
@@ -1072,24 +1273,60 @@ footer {
 }
 
 .contacts {
+  &__title {
+    display: none;
+    @media (min-width: 1024px) {
+      display: block;
+    }
+  }
   &__info-block {
     margin: 23px 0 40px;
     padding: 85px 0 85px 20px;
     background: url("../assets/contacts__back.png") no-repeat;
     background-size: cover;
+    @media (min-width: 1024px) {
+      padding: 70px 0;
+      background: url("./../assets/image\ 9.png") center / cover no-repeat;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__block-text {
+    @media (min-width: 1024px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: url("./../assets/image\ 9.png") center / cover no-repeat;
+      height: 770px;
+    }
   }
   &__text {
     font-size: 24px;
     margin-bottom: 20px;
+
     &:nth-child(even) {
       text-decoration: underline;
     }
     @media (max-width: 375px) {
       font-size: 18px;
     }
+    @media (min-width: 1024px) {
+      color: #eaeaea;
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
   }
   .red {
     color: var(--secondary-text-color);
+  }
+}
+.yandex__card {
+  height: 240px;
+  @media (min-width: 1024px) {
+    padding: 0 80px;
+    height: 450px;
   }
 }
 
@@ -1104,18 +1341,27 @@ footer {
   @media (max-width: 375px) {
     font-size: 27px;
   }
+  @media (min-width: 1024px) {
+    display: none;
+  }
 }
 .licenses__subtitle {
   color: #aeaeae;
   font-size: 10px;
   font-family: Montserrat;
   margin: 10px 0 20px;
+  @media (min-width: 1024px) {
+    display: none;
+  }
 }
 .licenses__block {
   display: flex;
   column-gap: 30px;
   justify-content: center;
   padding-bottom: 40px;
+  @media (min-width: 1024px) {
+    display: none;
+  }
 }
 .licenses__img {
   width: 126px;
@@ -1125,24 +1371,46 @@ footer {
   column-gap: 29px;
   justify-content: center;
   padding-top: 30px;
+  @media (min-width: 1024px) {
+    padding-top: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    column-gap: 0;
+  }
 }
 .licenses__cert-item {
   border-radius: 10px;
   border: 1px solid #fff;
   background: rgba(217, 217, 217, 0);
   padding: 15px 1px 20px 1px;
+  @media (min-width: 1024px) {
+    width: 550px;
+    padding: 30px 0;
+  }
 }
 .licenses__cert-title {
   color: #fff;
   text-align: center;
   font-size: 12px;
   margin-bottom: 20px;
+  @media (min-width: 1024px) {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: normal;
+    &:hover {
+      text-decoration-line: underline;
+    }
+  }
 }
 .licenses__cert-text {
   color: #898989;
   text-align: center;
   font-size: 10px;
   font-family: Montserrat;
+  @media (min-width: 1024px) {
+    font-size: 15px;
+  }
 }
 
 .services {
