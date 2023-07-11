@@ -89,7 +89,9 @@
                     >
                   </li>
                   <li class="header__items">
-                    <a href="./documents-and-licenses.html" class="header__link">ДОКУМЕНТАЦИЯ И ЛИЦЕНЗИИ</a>
+                    <a href="./documents-and-licenses.html" class="header__link"
+                      >Документация</a
+                    >
                   </li>
                   <li class="header__items">
                     <a href="./contacts.html" class="header__link">КОНТАКТЫ</a>
@@ -111,9 +113,7 @@
                     <a href="./services.html" class="header__link">услуги</a>
                   </li>
                   <li class="header__items">
-                    <a href="#" class="header__link"
-                      >лицензии</a
-                    >
+                    <a href="./licenses.html" class="header__link">лицензии</a>
                   </li>
                   <li class="header__items">
                     <a
@@ -438,7 +438,6 @@
             style="
               background-image: url('./assets/image\ 20.png');
               padding: 0 20px;
-              background-repeat: no-repeat;
               background-size: cover;
             "
           >
@@ -459,39 +458,30 @@
             <div class="main__block-row">
               <div class="main__block-over-red">
                 <span
-                  class="nums-anim"
-                  style="
-                    font-size: 160px;
-                    width: 100%;
-                    counter-reset: num var(--num-398);
-                    animation-name: counter-398;
-                  "
-                ></span>
+                  class="counter"
+                  style="font-size: 160px; width: 100%"
+                  data-target="398"
+                  >0</span
+                >
                 выездов
               </div>
               <div class="main__block-sub-red">
                 <div>
                   <span
-                    class="nums-anim"
-                    style="
-                      font-size: 64px;
-                      width: 100%;
-                      counter-reset: num var(--num-397);
-                      animation-name: counter-397;
-                    "
-                  ></span>
+                    class="counter"
+                    style="font-size: 64px; width: 100%"
+                    data-target="397"
+                    >0</span
+                  >
                   спасено
                 </div>
                 <div>
                   <span
-                    class="nums-anim"
-                    style="
-                      font-size: 64px;
-                      width: 100%;
-                      counter-reset: num var(--num-12);
-                      animation-name: counter-12;
-                    "
-                  ></span>
+                    class="counter"
+                    style="font-size: 64px; width: 100%"
+                    data-target="12"
+                    >0</span
+                  >
                   пострадавших
                 </div>
               </div>
@@ -546,7 +536,7 @@
                         <a
                           href="./documents-and-licenses.html"
                           class="footer__link"
-                          >Документация и лицензии</a
+                          >Документация</a
                         >
                       </li>
                       <li class="footer__items">
@@ -567,7 +557,7 @@
                         >
                       </li>
                       <li class="footer__items">
-                        <a href="#" class="footer__link">Лицензии</a>
+                        <a href="./licenses.html" class="footer__link">Лицензии</a>
                       </li>
                       <li class="footer__items">
                         <a
@@ -608,5 +598,6 @@
       </footer>
     </div>
     <script src="./js/script.js"></script>
+    <script src="./js/num.js"></script>
   </body>
 </html>

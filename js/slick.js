@@ -1,17 +1,22 @@
 function slick() {
   const btnClick = document.querySelectorAll(".click");
   const slickBlocks = document.querySelectorAll(".main__slider-block");
-  for (let i = 0; i < slickBlocks.length; i++) {
-    const slickBlock = slickBlocks[i];
-    btnClick[0].addEventListener(
-      "click",
-      () => (slickBlock.style.transform = "translate(-100%)")
-    );
-    btnClick[1].addEventListener(
-      "click",
-      () => (slickBlock.style.transform = "translate(0)")
-    );
-  }
+
+  const moveSlickBlock = (slickBlock, translation) => {
+    slickBlock.style.transform = `translate(${translation})`;
+  };
+
+  btnClick[0].addEventListener("click", () => {
+    slickBlocks.forEach((slickBlock) => {
+      moveSlickBlock(slickBlock, "-100%");
+    });
+  });
+
+  btnClick[1].addEventListener("click", () => {
+    slickBlocks.forEach((slickBlock) => {
+      moveSlickBlock(slickBlock, "0");
+    });
+  });
 }
 
 window.addEventListener("DOMContentLoaded", slick);
