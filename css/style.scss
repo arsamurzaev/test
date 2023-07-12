@@ -301,13 +301,16 @@ h6 {
     > span {
       font-size: 20px;
       line-height: 26px;
-      @media (max-width: 375px) {
-        font-size: 16px;
-      }
       @media (min-width: 1024px) {
         font-size: 40px;
         display: inline-block;
         margin-bottom: 10px;
+      }
+      @media (max-width: 1146px) {
+        font-size: 23px;
+      }
+      @media (max-width: 375px) {
+        font-size: 16px;
       }
     }
     @media (min-width: 1024px) {
@@ -317,6 +320,9 @@ h6 {
       letter-spacing: 2.8px;
       flex: 1;
       text-align: left;
+    }
+    @media (max-width: 1146px) {
+      font-size: 6px;
     }
     > .em-28 {
       letter-spacing: 4px;
@@ -404,6 +410,7 @@ h6 {
       transform: translate(0);
       min-width: 100%;
       display: flex;
+      position: relative;
       &:last-child {
         .main__slider-info {
           background: linear-gradient(90deg, #3e3e42 0%, #525252 0.01%, #1a1919 36.98%, #1a1919 96.11%);
@@ -435,6 +442,7 @@ h6 {
       min-height: 100%;
       background: linear-gradient(90deg, rgba(80, 80, 80, 0.47) 0%, #525252 17.18%, #1a1919 96.11%);
       padding: 160px 50px 103px 0px;
+      position: relative;
     }
     &-title {
       color: #fff;
@@ -442,12 +450,18 @@ h6 {
       font-size: 70px;
       font-weight: 400;
       line-height: normal;
+      @media (max-width: 1170px) {
+        font-size: 55px;
+      }
     }
     &-text {
       text-align: right;
       margin: 30px 0 120px;
     }
     &-buttons {
+      position: absolute;
+      bottom: 100px;
+      width: calc(100% - 50px);
       text-align: right;
     }
     &-btn {
@@ -503,7 +517,6 @@ h6 {
     justify-content: flex-end;
     p {
       max-width: 950px;
-      height: 360px;
       padding-left: 50px;
       padding-bottom: 20px;
       border-bottom: 1px solid #a80000;
@@ -605,6 +618,9 @@ h6 {
       line-height: normal;
       opacity: 0.30000001192092896;
       margin-bottom: 80px;
+      @media (max-width: 1248px) {
+        font-size: 100px;
+      }
     }
     &-row {
       display: flex;
@@ -655,7 +671,7 @@ footer {
       top: 11px;
       width: 34px;
       height: 34px;
-      background: url("../assets/icon__phone.svg") center no-repeat;
+      background: url("../asset/icon__phone.svg") center no-repeat;
     }
     @media (max-width: 375px) {
       font-size: 26px;
@@ -784,7 +800,7 @@ footer {
       position: absolute;
       left: 80px;
       top: 20px;
-      background: url("./../assets/IMG_0171\ 1.png") center no-repeat;
+      background: url("./../asset/IMG_0171\ 1.png") center no-repeat;
     }
   }
   &__list {
@@ -813,7 +829,7 @@ footer {
   }
   &__info {
     padding: 88px 40px 40px;
-    background: url("./../assets/aspects-urban-landscape-tokyo-city-during-day\ 1.png") no-repeat;
+    background: url("./../asset/aspects-urban-landscape-tokyo-city-during-day\ 1.png") no-repeat;
     background-size: cover;
   }
   &__info-list {
@@ -856,6 +872,9 @@ footer {
     display: flex;
     justify-content: space-between;
     column-gap: 120px;
+    @media (max-width: 1170px) {
+      column-gap: 60px;
+    }
   }
   &__item {
     width: 33%;
@@ -883,7 +902,7 @@ footer {
   }
   &__info {
     padding: 78px 35px 32px;
-    background: url("./../assets/д\ 1.png") no-repeat;
+    background: url("./../asset/д\ 1.png") no-repeat;
     background-size: cover;
   }
   &__list {
@@ -950,7 +969,7 @@ footer {
       height: 660px;
       position: absolute;
       left: 34%;
-      background: url("./../assets/IMG_0171\ 1.svg") center / cover no-repeat;
+      background: url("./../asset/IMG_0171\ 1.svg") center / cover no-repeat;
     }
   }
   &__left,
@@ -1023,6 +1042,9 @@ footer {
       font-weight: 700;
       line-height: normal;
       font-family: serif;
+      @media (max-width: 1170px) {
+        font-size: 90px;
+      }
     }
   }
 }
@@ -1070,6 +1092,12 @@ footer {
         @media (max-width: 1240px) {
           padding: 21px 0;
         }
+        >div {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          height: 100%;
+        }
       }
       th:first-child {
         border-top-left-radius: 10px;
@@ -1087,6 +1115,9 @@ footer {
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        @media (max-width: 1170px) {
+          font-size: 26px;
+        }
       }
       tr td:first-child {
         height: 55px;
@@ -1107,7 +1138,6 @@ footer {
       font-size: 40px;
       font-weight: 700;
       line-height: normal;
-      margin-bottom: 21px;
       @media (max-width: 1240px) {
         font-size: 30px;
       }
@@ -1130,6 +1160,10 @@ footer {
       font-weight: 700;
       line-height: normal;
       margin-bottom: 10px;
+      @media (max-width: 1132px) {
+        margin-left: 0;
+
+      }
     }
     &-label {
       color: #f6f6f6;
@@ -1255,11 +1289,11 @@ footer {
   &__info-block {
     margin: 23px 0 40px;
     padding: 85px 0 85px 20px;
-    background: url("../assets/contacts__back.png") no-repeat;
+    background: url("../asset/contacts__back.png") no-repeat;
     background-size: cover;
     @media (min-width: 1024px) {
       padding: 70px 0;
-      background: url("./../assets/image\ 9.png") center / cover no-repeat;
+      background: url("./../asset/image\ 9.png") center / cover no-repeat;
       display: flex;
       justify-content: center;
     }
@@ -1386,6 +1420,9 @@ footer {
 }
 .licenses__label {
   display: none;
+  @media (max-width: 1170px) {
+    font-size: 90px;
+  }
   @media (min-width: 1024px) {
     display: block;
   }
@@ -1424,7 +1461,7 @@ footer {
   &__list {
     margin-right: 80px;
     margin-left: 300px;
-    width: 1060px;
+    max-width: 1060px;
     display: flex;
     flex-direction: column;
     row-gap: 28px;
@@ -1461,7 +1498,6 @@ footer {
     font-weight: 200;
     line-height: normal;
     padding: 0 80px 0 300px;
-    height: 430px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
