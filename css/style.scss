@@ -671,7 +671,7 @@ footer {
       top: 11px;
       width: 34px;
       height: 34px;
-      background: url("../asset/icon__phone.svg") center no-repeat;
+      background: url("../assets/icon__phone.svg") center no-repeat;
     }
     @media (max-width: 375px) {
       font-size: 26px;
@@ -800,7 +800,7 @@ footer {
       position: absolute;
       left: 80px;
       top: 20px;
-      background: url("./../asset/IMG_0171\ 1.png") center no-repeat;
+      background: url("./../assets/IMG_0171\ 1.png") center no-repeat;
     }
   }
   &__list {
@@ -829,7 +829,7 @@ footer {
   }
   &__info {
     padding: 88px 40px 40px;
-    background: url("./../asset/aspects-urban-landscape-tokyo-city-during-day\ 1.png") no-repeat;
+    background: url("./../assets/aspects-urban-landscape-tokyo-city-during-day\ 1.png") no-repeat;
     background-size: cover;
   }
   &__info-list {
@@ -902,7 +902,7 @@ footer {
   }
   &__info {
     padding: 78px 35px 32px;
-    background: url("./../asset/д\ 1.png") no-repeat;
+    background: url("./../assets/д\ 1.png") no-repeat;
     background-size: cover;
   }
   &__list {
@@ -969,7 +969,7 @@ footer {
       height: 660px;
       position: absolute;
       left: 34%;
-      background: url("./../asset/IMG_0171\ 1.svg") center / cover no-repeat;
+      background: url("./../assets/IMG_0171\ 1.svg") center / cover no-repeat;
     }
   }
   &__left,
@@ -1289,11 +1289,11 @@ footer {
   &__info-block {
     margin: 23px 0 40px;
     padding: 85px 0 85px 20px;
-    background: url("../asset/contacts__back.png") no-repeat;
+    background: url("../assets/contacts__back.png") no-repeat;
     background-size: cover;
     @media (min-width: 1024px) {
       padding: 70px 0;
-      background: url("./../asset/image\ 9.png") center / cover no-repeat;
+      background: url("./../assets/image\ 9.png") center / cover no-repeat;
       display: flex;
       justify-content: center;
     }
